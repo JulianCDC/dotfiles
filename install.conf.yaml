@@ -11,6 +11,12 @@
         create: true
     ~/.zprofile:
     ~/.zshrc:
+    ~/.oh-my-zsh:
+        path: ohmyzsh/
+        create: true
+    ~/.oh-my-zsh/custom/plugins:
+        path: ohmyzsh-plugins/*
+        glob: true
     ~/bin:
         path: bin/
         create: true
