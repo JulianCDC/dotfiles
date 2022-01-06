@@ -1,0 +1,42 @@
+- clean: ['~']
+
+- link:
+    ~/.profile:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.bash_logout:
+    ~/.gitconfig:
+    ~/.ssh/config:
+        path: ssh/config
+        create: true
+    ~/.zprofile:
+    ~/.zshrc:
+    ~/bin:
+        path: bin/
+        create: true
+    ~/.xinitrc:
+    ~/.gitkraken:
+        path: gitkraken/
+        create: true
+    ~/.local/share/fonts:
+        path: local/share/fonts/
+        create: true
+    ~/.local/share/kxmlgui5/dolphin:
+        path: local/share/kxmlgui5/dolphin/
+        create: true
+        if: '[ "$DESKTOP_SESSION" = plasma ]'
+    ~/.wallpapers:
+        path: wallpapers/
+        create: true
+    ~/.config:
+        path: config/plasma/*
+        glob: true
+        create: true
+        if: '[ "$DESKTOP_SESSION" = plasma ]'
+    # ~/.config/:
+    #     path: config/*
+    #     glob: true
+    #     create: true
+    #     exclude: config/plasma
+
+

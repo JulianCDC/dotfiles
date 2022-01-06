@@ -1,0 +1,24 @@
+Host 109.238.12.210
+  HostName 109.238.12.210
+  User julian
+  Port 960
+
+Host 192.168.56.3
+  HostName 192.168.56.3
+  User root
+
+Host 192.168.56.4
+  HostName 192.168.56.4
+  User root
+
+Host 192.168.56.5
+  HostName 192.168.56.5
+  User root
+
+Host 192.168.56.7
+  HostName 192.168.56.7
+  User root
+
+Host 192.168.56.9
+  HostName 192.168.56.9
+  User root
