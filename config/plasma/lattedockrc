@@ -15,8 +15,8 @@ eDP-1 DP-1 Width 1920x1080=700
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Moe.layout.latte,file:$HOME/Téléchargements/Moe.layout.latte
-Recent URLs[$e]=file:$HOME/Téléchargements/,file:$HOME/,file:$HOME/Documents/
+Recent Files[$e]=Moe.layout.latte,file:///mnt/data/OneDrive/Misc/Pumpkin/Pumpkin.png,file:///mnt/data/OneDrive/Misc/Pumpkin/Pumpkin (no border).png,file:///mnt/data/OneDrive/Misc/Pumpkin/Pumpkin_large.png
+Recent URLs[$e]=file:$HOME/Téléchargements/,file:$HOME/,file:$HOME/Documents/,file:///mnt/data/OneDrive/Misc/Pumpkin/
 detailViewIconSize=16
 iconViewIconSize=43
 
@@ -49,6 +49,14 @@ calendars=25,26,27
 
 [PlasmaThemeExtended]
 outlineWidth=1
+
+[PlasmaTransientsConfig]
+PreloadWeight=0
+byPassWM=false
+isPreferredForShortcuts=false
+name=Panneau vide
+onPrimary=true
+viewType=0
 
 [ScreenConnectors]
 10=eDP-1:::0,0 1920x1080
