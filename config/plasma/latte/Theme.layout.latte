@@ -40,19 +40,20 @@ PreloadWeight=100
 
 [Containments][1][Applets][190][Configuration][ConfigDialog]
 DialogHeight=480
-DialogWidth=640
+DialogWidth=639
 
 [Containments][1][Applets][190][Configuration][General]
 customButtonImage=/mnt/data/OneDrive/Misc/Pumpkin/Pumpkin.png
 favoriteSystemActions=logout
 favoritesPortedToKAstats=true
+useExtraRunners=false
 
 [Containments][1][Applets][193]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][1][Applets][193][Configuration]
-PreloadWeight=70
+PreloadWeight=90
 
 [Containments][1][Applets][193][Configuration][Appearance]
 customDateFormat=d MMMM
@@ -67,7 +68,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][1][Applets][194][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 showHumidityInTooltip=false
 showPressureInTooltip=false
 showTemperatureInCompactMode=false
@@ -197,7 +198,7 @@ customType=org.kde.latte.dashtopanel
 enabled=true
 enabledForApplets=true
 padding=0.07999999821186066
-type=org.kde.latte.dashtopanel
+type=org.kde.latte.default
 
 [Containments][1][Indicator][org.kde.latte.dashtopanel][General]
 maxBackgroundOpacity=0
@@ -222,6 +223,12 @@ plugin=org.kde.plasma.notifications
 [Containments][12][Applets][41]
 immutability=1
 plugin=org.kde.plasma.volume
+
+[Containments][12][Applets][41][Configuration]
+PreloadWeight=60
+
+[Containments][12][Applets][41][Configuration][General]
+currentTab=streams
 
 [Containments][12][Applets][42]
 immutability=1
@@ -336,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][13][Applets][58][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 showHumidityInTooltip=false
 showPressureInTooltip=false
 showTemperatureInCompactMode=false
@@ -490,7 +497,7 @@ customType=org.kde.latte.dashtopanel
 enabled=true
 enabledForApplets=true
 padding=0.07999999821186066
-type=org.kde.latte.dashtopanel
+type=org.kde.latte.default
 
 [Containments][13][Indicator][org.kde.latte.dashtopanel][General]
 maxBackgroundOpacity=0
@@ -511,6 +518,9 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.clipboard
 
+[Containments][167][Applets][168][Configuration]
+PreloadWeight=75
+
 [Containments][167][Applets][169]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
@@ -519,6 +529,9 @@ plugin=org.kde.plasma.devicenotifier
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][167][Applets][170][Configuration]
+PreloadWeight=55
+
 [Containments][167][Applets][171]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
@@ -526,6 +539,9 @@ plugin=org.kde.plasma.manage-inputmethod
 [Containments][167][Applets][172]
 immutability=1
 plugin=org.kde.kdeconnect
+
+[Containments][167][Applets][172][Configuration]
+PreloadWeight=55
 
 [Containments][167][Applets][173]
 immutability=1
@@ -557,6 +573,9 @@ plugin=org.kde.plasma.networkmanagement
 [Containments][167][Applets][180]
 immutability=1
 plugin=org.kde.plasma.bluetooth
+
+[Containments][167][Applets][180][Configuration]
+PreloadWeight=55
 
 [Containments][167][Applets][181]
 immutability=1
