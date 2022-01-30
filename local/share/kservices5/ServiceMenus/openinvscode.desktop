@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name = Open In VScode
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+X-KDE-Priority=TopLevel
+Actions = openvscode
+
+[Desktop Action openvscode]
+Name = Ouvrir Dans VSCode
+Exec=/usr/bin/code-insiders %f
+Icon=visual-studio-code-insiders

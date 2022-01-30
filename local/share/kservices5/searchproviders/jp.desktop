@@ -1,0 +1,8 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=jp
+Name=jisho
+Query=https://jisho.org/search/\\{@}
+Type=Service
+X-KDE-ServiceTypes=SearchProvider

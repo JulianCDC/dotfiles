@@ -1,0 +1,8 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=mal
+Name=MyAnimeList
+Query=https://myanimelist.net/search/all?q=\\{@}&cat=all
+Type=Service
+X-KDE-ServiceTypes=SearchProvider

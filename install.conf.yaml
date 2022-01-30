@@ -31,6 +31,10 @@
         path: local/share/kxmlgui5/dolphin/
         create: true
         if: '[ "$DESKTOP_SESSION" = plasma ]'
+    ~/.local/share/kservices5:
+        path: local/share/kservices5
+        create: true
+        if: '[ "$DESKTOP_SESSION" = plasma ]'
     ~/.wallpapers:
         path: wallpapers/
         create: true
