@@ -12,9 +12,27 @@ Rows=2
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
+alwaysopenfocusedscreenEnabled=false
+floatingtilesEnabled=false
+forceblurEnabled=false
 glideEnabled[$d]
+krohnkiteEnabled=true
 kwin4_effect_translucencyEnabled=true
+lattewindowcolorsEnabled=false
+minimizeallEnabled=false
+replacewindowEnabled=false
 sheetEnabled=true
 slidebackEnabled=true
+synchronizeskipswitcherEnabled=false
+tilegapsEnabled=false
+videowallEnabled=false
 wobblywindowsEnabled=true
 zoomEnabled=false
+
+[Script-krohnkite]
+enableStairLayout=false
+screenGapBottom=10
+screenGapLeft=10
+screenGapRight=10
+screenGapTop=10
+tileLayoutGap=10
