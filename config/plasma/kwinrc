@@ -13,6 +13,7 @@ Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
 alwaysopenfocusedscreenEnabled=false
+alwaysopenonfocusedscreenEnabled=false
 floatingtilesEnabled=false
 forceblurEnabled=false
 glideEnabled[$d]
@@ -33,7 +34,7 @@ zoomEnabled=false
 enableMonocleLayout=false
 enableQuarterLayout=true
 enableStairLayout=false
-ignoreClass=krunner,yakuake,spectacle,kded5,lattedock,latte-dock
+ignoreClass=krunner,yakuake,spectacle,kded5,lattedock,latte-dock,pinentry-gtk-2
 screenGapBottom=10
 screenGapLeft=10
 screenGapRight=10
