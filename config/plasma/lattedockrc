@@ -28,7 +28,7 @@ eDP-1-1 DP-1-1 Width 1920x1080=393
 
 [LatteSettingsDialog]
 downloadWindowSize=800,550
-windowSize=700,700
+windowSize=700,727
 
 [LatteSettingsDialog][DetailsDialog]
 windowSize=597,640
@@ -50,6 +50,9 @@ calendars=25,26,27
 [PlasmaThemeExtended]
 outlineWidth=1
 
+[PlasmaTransientsConfig]
+PreloadWeight=0
+
 [ScreenConnectors]
 10=eDP-1:::0,0 1920x1080
 11=DP-1:::1920,0 1920x1080
@@ -65,7 +68,7 @@ downloadWindowSize=-1,-1
 inAdvancedModeForEditSettings=true
 isAvailableGeometryBroadcastedToPlasma=true
 lastNonAssignedLayout=Moe
-launchers=
+launchers=applications:org.kde.dolphin.desktop
 layoutsColumnWidths=
 layoutsWindowSize=-1,-1
 memoryUsage=0

@@ -30,7 +30,10 @@ wobblywindowsEnabled=true
 zoomEnabled=false
 
 [Script-krohnkite]
+enableMonocleLayout=false
+enableQuarterLayout=true
 enableStairLayout=false
+ignoreClass=krunner,yakuake,spectacle,kded5,lattedock,latte-dock
 screenGapBottom=10
 screenGapLeft=10
 screenGapRight=10
