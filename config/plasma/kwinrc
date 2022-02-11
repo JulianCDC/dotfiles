@@ -34,6 +34,7 @@ zoomEnabled=false
 enableMonocleLayout=false
 enableQuarterLayout=true
 enableStairLayout=false
+floatingClass=1password
 ignoreClass=krunner,yakuake,spectacle,kded5,lattedock,latte-dock,pinentry-gtk-2
 screenGapBottom=10
 screenGapLeft=10
