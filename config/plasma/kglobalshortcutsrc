@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Gestion des activités
+switch-to-activity-28ca905a-9d0b-4f15-8c5e-7ff9c836cb35=none,none,Passer à l'activité « Défaut »
 switch-to-activity-41d98f18-3a64-409b-a0a2-fe3f5a5b8c36=none,none,Passer à l'activité « Défaut »
 switch-to-activity-90add256-5e22-422a-ad67-65276f069802=none,none,Passer à l'activité « Game »
 
@@ -25,8 +26,8 @@ display=Display\tMeta+P,Display\tMeta+P,Changer d'affichage
 
 [khotkeys]
 _k_friendly_name=Service personnalisé de raccourcis\s
-{7a2ea2ea-ed0f-421b-a759-9cecacc97400}=Ctrl+Alt+T,none,Launch Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Rechercher
+{ec94d79f-d26d-486b-a6c0-fb7d29df6611}=Ctrl+Alt+T,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=Volume audio
@@ -149,14 +150,15 @@ Window Above Other Windows=none,,Conserver une fenêtre au-dessus des autres
 Window Below Other Windows=none,,Conserver une fenêtre au-dessous des autres
 Window Close=Alt+F4,Alt+F4,Fermer une fenêtre
 Window Fullscreen=none,,Mettre une fenêtre en plein écran
-Window Grow Horizontal=none,,Empiler horizontalement une fenêtre en croissance
-Window Grow Vertical=none,,Empiler verticalement une fenêtre en croissance
+Window Grow Horizontal=none,,Maximiser horizontalement une fenêtre
+Window Grow Vertical=none,,Maximiser verticalement une fenêtre
 Window Lower=none,,Enrouler une fenêtre
 Window Maximize=Meta+PgUp,Meta+PgUp,Maximiser une fenêtre
 Window Maximize Horizontal=none,,Maximiser horizontalement une fenêtre
 Window Maximize Vertical=none,,Maximiser verticalement une fenêtre
 Window Minimize=Meta+PgDown,Meta+PgDown,Réduire une fenêtre
 Window Move=none,,Déplacer une fenêtre
+Window Move Center=none,,Déplacer la fenêtre au centre
 Window No Border=none,,Cacher une bordure de fenêtre
 Window On All Desktops=none,,Conserver une fenêtre sur tous les bureaux
 Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Envoyer une fenêtre sur le bureau en dessous
@@ -164,10 +166,10 @@ Window One Desktop Up=Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Envoyer une fenêtre
 Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Envoyer une fenêtre sur le bureau à gauche
 Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Envoyer une fenêtre sur le bureau à droite
 Window Operations Menu=Alt+F3,Alt+F3,Menu des opérations de fenêtres
-Window Pack Down=none,,Empiler une fenêtre en bas
-Window Pack Left=none,,Empiler une fenêtre à gauche
-Window Pack Right=none,,Empiler une fenêtre à droite
-Window Pack Up=none,,Empiler une fenêtre en haut
+Window Pack Down=none,,Déplacer une fenêtre vers le bas
+Window Pack Left=none,,Déplacer une fenêtre vers la gauche
+Window Pack Right=none,,Déplacer une fenêtre vers la droite
+Window Pack Up=none,,Déplacer une fenêtre vers le haut
 Window Quick Tile Bottom=Meta+Down,Meta+Down,Mettre rapidement en mosaïque une fenêtre en bas
 Window Quick Tile Bottom Left=none,,Mettre rapidement en mosaïque une fenêtre en bas et à gauche
 Window Quick Tile Bottom Right=none,,Mettre rapidement en mosaïque une fenêtre en bas et à droite
@@ -179,8 +181,8 @@ Window Quick Tile Top Right=none,,Mettre rapidement en mosaïque une fenêtre en
 Window Raise=none,,Dérouler une fenêtre
 Window Resize=none,,Redimensionner une fenêtre
 Window Shade=none,,Enrouler une fenêtre
-Window Shrink Horizontal=none,,Empiler horizontalement une fenêtre en réduction
-Window Shrink Vertical=none,,Empiler verticalement une fenêtre en réduction
+Window Shrink Horizontal=none,,Réduire horizontalement une fenêtre
+Window Shrink Vertical=none,,Réduire verticalement une fenêtre
 Window to Desktop 1=none,,Envoyer une fenêtre sur le bureau 1
 Window to Desktop 10=none,,Envoyer une fenêtre sur le bureau 10
 Window to Desktop 11=none,,Envoyer une fenêtre sur le bureau 11

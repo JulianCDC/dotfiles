@@ -35,9 +35,6 @@
         path: local/share/kservices5
         create: true
         if: '[ "$DESKTOP_SESSION" = plasma ]'
-    ~/.wallpapers:
-        path: wallpapers/
-        create: true
     ~/.config:
         path: config/plasma/*
         glob: true
