@@ -28,10 +28,10 @@ eDP-1-1 DP-1-1 Width 1920x1080=795
 
 [LatteSettingsDialog]
 downloadWindowSize=800,550
-windowSize=700,727
+windowSize=700,736
 
 [LatteSettingsDialog][DetailsDialog]
-windowSize=597,640
+windowSize=669,640
 
 [LatteSettingsDialog][TabLayouts]
 columnWidths=49,49,80,
@@ -42,7 +42,7 @@ sortOrder=0
 columnWidths=59,256,142,135,131
 sortColumn=2
 sortOrder=0
-windowSize=1118,630
+windowSize=1920,953
 
 [PIMEventsPlugin]
 calendars=25,26,27
@@ -65,7 +65,7 @@ downloadWindowSize=-1,-1
 inAdvancedModeForEditSettings=true
 isAvailableGeometryBroadcastedToPlasma=true
 lastNonAssignedLayout=Moe
-launchers=applications:microsoft-edge.desktop,applications:org.kde.dolphin.desktop
+launchers=applications:microsoft-edge.desktop,applications:org.kde.dolphin.desktop,applications:msedge-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop
 layoutsColumnWidths=
 layoutsWindowSize=-1,-1
 memoryUsage=0
