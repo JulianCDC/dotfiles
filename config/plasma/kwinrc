@@ -25,7 +25,7 @@ Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
 blurEnabled=true
-krohnkiteEnabled=true
+krohnkiteEnabled=false
 
 [Script-krohnkite]
 enableMonocleLayout=false
