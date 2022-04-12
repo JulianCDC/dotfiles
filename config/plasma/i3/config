@@ -6,7 +6,7 @@
 #
 
 # kill kde splashscreen
-exec pkill "ksplashqml"
+exec --no-startup-id pkill "ksplashqml"
 
 # gaps
 gaps inner 8
@@ -15,14 +15,17 @@ gaps inner 8
 exec_always --no-startup-id picom --experimental-backends -b
 
 # i3-layouts
-exec_always i3-layouts
+exec_always --no-startup-id i3-layouts
 
 # wallpaper
-exec $HOME/Documents/Scripts/feh-wallpaper.sh
+exec --no-startup-id $HOME/Documents/Scripts/feh-wallpaper.sh
 
 # scratchpad
 bindsym $mod+Shift+S move scratchpad
-bindsym $mod+Alt+Shift+S scratchpad show
+# bindsym $mod+Alt+Shift+S scratchpad show
+
+# rofi
+bindsym $mod+d exec rofi -show drun
 
 # i3 config file (v4)
 #
@@ -51,7 +54,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -74,7 +77,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+a kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -225,17 +228,19 @@ bindsym $mod+r mode "resize"
 #}
 
 # Window rules
+mouse_warping none
+focus_on_window_activation none
+
 for_window [title="Bureau — Plasma"] kill, floating enable, border none
-for_window [class="plasmashell"] floating enable
-for_window [class="Plasma"] floating enable, border none
-for_window [title="plasma-desktop"] floating enable, border none
-for_window [title="win7"] floating enable, border none
-for_window [class="krunner"] floating enable, border none
-for_window [class="Kmix"] floating enable, border none
-for_window [class="Klipper"] floating enable, border none
-for_window [class="Plasmoidviewer"] floating enable, border none
-for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
-no_focus [class="plasmashell" window_type="notification"]
+for_window [window_role="task_dialog"] floating enable
+
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+no_focus [class="lattedock"]
 
 for_window [class=".*"] border pixel 0
+
