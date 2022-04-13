@@ -1,0 +1,7 @@
+configuration {
+    display-drun:                   "Apps";
+    display-window:                 "Window";
+    show-icons:true;
+}
+
+@theme "slate"

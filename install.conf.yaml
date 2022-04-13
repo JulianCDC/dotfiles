@@ -36,10 +36,9 @@
         create: true
         if: '[ "$DESKTOP_SESSION" = plasma ]'
     ~/.config:
-        path: config/plasma/*
+        path: config/*
         glob: true
         create: true
-        if: '[ "$DESKTOP_SESSION" = plasma ]'
     # ~/.config/:
     #     path: config/*
     #     glob: true
