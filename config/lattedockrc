@@ -73,7 +73,7 @@ metaPressAndHoldEnabled=true
 mouseSensitivity=2
 screenTrackerInterval=2500
 showInfoWindow=true
-singleModeLayoutName=Theme
+singleModeLayoutName=i3
 version=2
 
 [UniversalSettings][ScreenScales]

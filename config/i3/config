@@ -21,11 +21,13 @@ exec_always --no-startup-id i3-layouts
 exec --no-startup-id $HOME/Documents/Scripts/feh-wallpaper.sh
 
 # scratchpad
-bindsym $mod+Shift+S move scratchpad
-# bindsym $mod+Alt+Shift+S scratchpad show
+bindsym $mod+s move scratchpad
+bindsym $mod+Shift+s scratchpad show
 
 # rofi
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/bin/launcher_misc
+bindsym $mod+o exec --no-startup-id $HOME/.config/rofi/bin/menu_apps
+bindsym $mod+Shift+e exec --no-startup-id $HOME/.config/rofi/bin/powermenu
 
 # i3 config file (v4)
 #
@@ -187,7 +189,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec --no-startup-id qdbus-qt5 org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
+# bindsym $mod+Shift+e exec --no-startup-id qdbus-qt5 org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

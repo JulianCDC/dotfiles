@@ -105,3 +105,6 @@ export VISUAL="/usr/bin/code-insiders --reuse-window --wait"
 
 # set browser
 export BROWSER="/usr/bin/microsoft-edge-stable"
+
+# add rofi to path
+export PATH="$PATH:$HOME/.config/rofi/bin"

@@ -1,0 +1,10 @@
+[KPropertiesDialog]
+eDP-1-1 DP-1-1 Height 1920x1080=458
+eDP-1-1 DP-1-1 Width 1920x1080=406
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
+[UniversalSettings]
+inAdvancedModeForEditSettings=true
+singleModeLayoutName=i3
