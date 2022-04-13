@@ -50,6 +50,9 @@ calendars=25,26,27
 [PlasmaThemeExtended]
 outlineWidth=1
 
+[PlasmaTransientsConfig]
+PreloadWeight=34
+
 [ScreenConnectors]
 10=eDP-1:::0,0 1920x1080
 11=DP-1:::1920,0 1920x1080

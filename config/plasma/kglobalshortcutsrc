@@ -40,11 +40,11 @@ mute=Volume Mute,Volume Mute,Couper le son
 
 [ksmserver]
 Halt Without Confirmation=none,,Éteindre sans confirmation
-Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Verrouiller la session
+Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Déconnexion
 Log Out Without Confirmation=none,,Déconnexion sans confirmation
 Reboot Without Confirmation=none,,Redémarrer sans confirmation
-_k_friendly_name=Gestion des sessions
+_k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activer une fenêtre réclamant de l'attention
@@ -141,14 +141,14 @@ Walk Through Desktop List=none,none,Naviguer dans la liste des bureaux
 Walk Through Desktop List (Reverse)=none,none,Naviguer dans la liste des bureaux (en ordre inverse)
 Walk Through Desktops=none,none,Naviguer parmi les bureaux
 Walk Through Desktops (Reverse)=none,none,Naviguer parmi les bureaux (en ordre inverse)
-Walk Through Windows=Alt+Tab,Alt+Tab,Naviguer parmi les fenêtres
-Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Backtab,Naviguer parmi les fenêtres (en ordre inverse)
-Walk Through Windows Alternative=none,none,Naviguer parmi les alternatives de fenêtres
-Walk Through Windows Alternative (Reverse)=none,none,Naviguer parmi les alternatives de fenêtres (en ordre inverse)
-Walk Through Windows of Current Application=Alt+`,Alt+`,Naviguer parmi les fenêtres de l'application courante
-Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Naviguer parmi les fenêtres de l'application courante (en ordre inverse)
-Walk Through Windows of Current Application Alternative=none,none,Naviguer parmi les fenêtres de l'application alternative courante
-Walk Through Windows of Current Application Alternative (Reverse)=none,none,Naviguer parmi les fenêtres de l'application alternative courante (en ordre inverse)
+Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
+Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Backtab,Walk Through Windows (Reverse)
+Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
+Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
+Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Application
+Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
+Walk Through Windows of Current Application Alternative=none,none,Walk Through Windows of Current Application Alternative
+Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,none,Conserver une fenêtre au-dessus des autres
 Window Below Other Windows=none,none,Conserver une fenêtre au-dessous des autres
 Window Close=Alt+F4,Alt+F4,Fermer une fenêtre
@@ -332,7 +332,7 @@ Turn Off Screen=none,none,Éteindre l'écran
 _k_friendly_name=Gestion de l'énergie
 
 [plasmashell]
-_k_friendly_name=Latte Dock
+_k_friendly_name=Basculer l'activité
 activate task manager entry 1=Meta+1,Meta+1,Activer l'entrée du gestionnaire de tâches 1
 activate task manager entry 10=Meta+0,Meta+0,Activer l'entrée du gestionnaire de tâches 10
 activate task manager entry 2=Meta+2,Meta+2,Activer l'entrée du gestionnaire de tâches 2
@@ -351,7 +351,7 @@ cyclePrevAction=none,none,Élément précédent de l'historique
 edit_clipboard=none,none,Modifier les contenus...
 manage activities=none,Meta+Q,Afficher le sélecteur d'activités
 next activity=Meta+Tab,Meta+Tab,Parcourir les activités
-previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Parcourir les activités (à l'envers)
+previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Parcourir les activités (inversé)
 repeat_action=none,Ctrl+Alt+R,Démarrer manuellement une action concernant le presse-papier actuel
 show dashboard=none,Ctrl+F12,Afficher le bureau
 show-barcode=none,none,Afficher le code barre...

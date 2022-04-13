@@ -71,7 +71,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][12][Applets][43][Configuration]
-PreloadWeight=70
+PreloadWeight=75
 SystrayContainmentId=13
 
 [Containments][12][Applets][44]
@@ -176,6 +176,9 @@ plugin=org.kde.plasma.clipboard
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][13][Applets][51][Configuration]
+PreloadWeight=55
+
 [Containments][13][Applets][52]
 immutability=1
 plugin=org.kde.plasma.bluetooth
@@ -253,6 +256,12 @@ PreloadWeight=42
 immutability=1
 plugin=org.kde.plasma.volume
 
+[Containments][231][Applets][239][Configuration]
+PreloadWeight=75
+
+[Containments][231][Applets][239][Configuration][General]
+currentTab=streams
+
 [Containments][231][Applets][240]
 immutability=1
 plugin=org.kde.kdeconnect
@@ -281,7 +290,7 @@ plugin=org.kde.plasma.keyboardlayout
 
 [Containments][231][ConfigDialog]
 DialogHeight=1046
-DialogWidth=948
+DialogWidth=1904
 
 [Containments][231][General]
 extraItems=org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.plasma.keyboardlayout
@@ -329,7 +338,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][25][Applets][230][Configuration]
-PreloadWeight=70
+PreloadWeight=100
 SystrayContainmentId=231
 
 [Containments][25][Applets][246]
@@ -337,17 +346,17 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller_plus
 
 [Containments][25][Applets][246][Configuration]
-PreloadWeight=80
+PreloadWeight=100
 
 [Containments][25][Applets][246][Configuration][CompactView]
-maximumWidthUnits=51
-minimumWidthUnits=15
+maximumWidthUnits=79
+minimumWidthUnits=20
 showAlbumArt=false
 showProgressBar=false
 
 [Containments][25][Applets][246][Configuration][ConfigDialog]
-DialogHeight=1036
-DialogWidth=948
+DialogHeight=1046
+DialogWidth=1904
 
 [Containments][25][Applets][249]
 immutability=1
@@ -373,6 +382,20 @@ DialogWidth=948
 containmentType=Latte
 lengthType=Expanding
 
+[Containments][25][Applets][252]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][25][Applets][252][Configuration]
+PreloadWeight=65
+
+[Containments][25][Applets][252][Configuration][Appearance]
+showDate=false
+
+[Containments][25][Applets][252][Configuration][ConfigDialog]
+DialogHeight=1046
+DialogWidth=1904
+
 [Containments][25][ConfigDialog]
 DialogHeight=1254
 DialogWidth=529
@@ -383,7 +406,7 @@ PreloadWeight=0
 [Containments][25][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=229;249;246;250;230
+appletOrder=252;229;249;246;250;230
 appletShadowsEnabled=false
 autoDecreaseIconSize=false
 autoSizeEnabled=false
@@ -403,8 +426,8 @@ screenEdgeMargin=-1
 shadowOpacity=25
 shadows=None
 shadowsUpgraded=true
-splitterPosition=2
-splitterPosition2=6
+splitterPosition=3
+splitterPosition2=7
 taskScrollAction=ScrollNone
 tasksUpgraded=true
 thickMargin=11

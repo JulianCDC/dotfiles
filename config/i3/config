@@ -6,6 +6,7 @@
 #
 
 # kill kde splashscreen
+exec --no-startup-id wmctrl -c Plasma
 exec --no-startup-id pkill "ksplashqml"
 
 # gaps
@@ -16,6 +17,17 @@ exec_always --no-startup-id picom --experimental-backends -b
 
 # i3-layouts
 exec_always --no-startup-id i3-layouts
+
+set $i3l autosplit to workspace $ws1
+set $i3l autosplit to workspace $ws2
+set $i3l autosplit to workspace $ws3
+set $i3l autosplit to workspace $ws4
+set $i3l autosplit to workspace $ws5
+set $i3l autosplit to workspace $ws6
+set $i3l autosplit to workspace $ws7
+set $i3l autosplit to workspace $ws8
+set $i3l autosplit to workspace $ws9
+set $i3l autosplit to workspace $ws10
 
 # wallpaper
 exec --no-startup-id $HOME/Documents/Scripts/feh-wallpaper.sh
@@ -229,10 +241,9 @@ bindsym $mod+r mode "resize"
 #	}
 #}
 
-# Window rules
-mouse_warping none
-focus_on_window_activation none
+workspace_auto_back_and_forth yes
 
+# Window rules
 for_window [title="Bureau — Plasma"] kill, floating enable, border none
 for_window [window_role="task_dialog"] floating enable
 
@@ -242,7 +253,7 @@ for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [title="Latte Dock"] floating enable;
 no_focus [class="lattedock"]
 
 for_window [class=".*"] border pixel 0
-
