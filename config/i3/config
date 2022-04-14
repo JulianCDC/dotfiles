@@ -12,6 +12,9 @@ exec --no-startup-id pkill "ksplashqml"
 # gaps
 gaps inner 8
 
+# wallpaper
+exec --no-startup-id $HOME/Documents/Scripts/feh-wallpaper.sh
+
 # compositor
 exec_always --no-startup-id picom --experimental-backends -b
 
@@ -28,9 +31,6 @@ set $i3l autosplit to workspace $ws7
 set $i3l autosplit to workspace $ws8
 set $i3l autosplit to workspace $ws9
 set $i3l autosplit to workspace $ws10
-
-# wallpaper
-exec --no-startup-id $HOME/Documents/Scripts/feh-wallpaper.sh
 
 # scratchpad
 bindsym $mod+s move scratchpad

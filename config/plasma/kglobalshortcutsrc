@@ -332,7 +332,7 @@ Turn Off Screen=none,none,Éteindre l'écran
 _k_friendly_name=Gestion de l'énergie
 
 [plasmashell]
-_k_friendly_name=Basculer l'activité
+_k_friendly_name=Latte Dock
 activate task manager entry 1=Meta+1,Meta+1,Activer l'entrée du gestionnaire de tâches 1
 activate task manager entry 10=Meta+0,Meta+0,Activer l'entrée du gestionnaire de tâches 10
 activate task manager entry 2=Meta+2,Meta+2,Activer l'entrée du gestionnaire de tâches 2
