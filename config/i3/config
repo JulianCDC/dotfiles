@@ -5,6 +5,10 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+# autostart
+exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id /usr/bin/latte-dock
+
 # kill kde splashscreen
 exec --no-startup-id wmctrl -c Plasma
 exec --no-startup-id pkill "ksplashqml"
@@ -255,5 +259,6 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [title="Latte Dock"] floating enable;
 no_focus [class="lattedock"]
+no_focus [class="Dunst"]
 
 for_window [class=".*"] border pixel 0

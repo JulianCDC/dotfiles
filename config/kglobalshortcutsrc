@@ -286,11 +286,11 @@ show-on-mouse-pos=none,Meta+V,Afficher Klipper à la position de la souris
 
 [mediacontrol]
 _k_friendly_name=Contrôleur de média
-mediavolumedown=none,,Diminuer le volume du média
-mediavolumeup=none,,Augmenter le volume du média
+mediavolumedown=none,none,Diminuer le volume du média
+mediavolumeup=none,none,Augmenter le volume du média
 nextmedia=Media Next,Media Next,Média suivant
 pausemedia=Media Pause,Media Pause,Mettre en pause la lecture du média
-playmedia=none,,Lancer la lecture du média
+playmedia=none,none,Lancer la lecture du média
 playpausemedia=Media Play,Media Play,Lancer / Mettre en pause la lecture
 previousmedia=Media Previous,Media Previous,Média précédent
 stopmedia=Media Stop,Media Stop,Arrêter la lecture
@@ -332,7 +332,7 @@ Turn Off Screen=none,none,Éteindre l'écran
 _k_friendly_name=Gestion de l'énergie
 
 [plasmashell]
-_k_friendly_name=Latte Dock
+_k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Activer l'entrée du gestionnaire de tâches 1
 activate task manager entry 10=Meta+0,Meta+0,Activer l'entrée du gestionnaire de tâches 10
 activate task manager entry 2=Meta+2,Meta+2,Activer l'entrée du gestionnaire de tâches 2
@@ -359,7 +359,7 @@ show-on-mouse-pos=none,Meta+V,Afficher Klipper à la position de la souris
 stop current activity=Meta+S,Meta+S,Arrêter l'activité actuelle
 switch to next activity=none,,Basculer vers l'activité suivante
 switch to previous activity=none,,Basculer vers l'activité précédente
-toggle do not disturb=none,,Basculer « Ne pas déranger »
+toggle do not disturb=none,none,Basculer « Ne pas déranger »
 
 [systemsettings.desktop]
 _k_friendly_name=Configuration du système
