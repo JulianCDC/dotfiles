@@ -32,9 +32,7 @@ Item {
     implicitHeight: pageColumn.implicitHeight
 
     property alias cfg_widgetWidth: widgetWidth.value
-    property alias cfg_displayArtist: root.displayArtistPosition
-
-    property int displayArtistPosition: 0
+    property alias cfg_displayArtist: displayArtist.checked
 
     ColumnLayout {
         id: pageColumn
@@ -69,50 +67,19 @@ Item {
             title: i18n("Display")
             flat: true
 
-            ExclusiveGroup {
-                id: displayArtistPositionGroup
-                onCurrentChanged: {
-                    root.displayArtistPosition = current.type;
-                }
-            }
+            ColumnLayout {
+                Layout.fillWidth: true
 
-            RowLayout {
-                RadioButton {
-                    id: displayNone
-                    checked: root.displayArtistPosition === 0
-                    exlusiveGroupe: displayArtistPositionGroup
+                RowLayout {
+                    Layout.fillHeight: false
 
-                    readonly property int type: 0
-                }
-            }
+                    Label {
+                        text: i18n("Display artist: ")
+                    }
 
-            RowLayout {
-                RadioButton {
-                    id: displayBelow
-                    checked: root.displayArtistPosition === 1
-                    exlusiveGroupe: displayArtistPositionGroup
-
-                    readonly property int type: 1
-                }
-            }
-
-            RowLayout {
-                RadioButton {
-                    id: displayBefore
-                    checked: root.displayArtistPosition === 2
-                    exlusiveGroupe: displayArtistPositionGroup
-
-                    readonly property int type: 2
-                }
-            }
-
-            RowLayout {
-                RadioButton {
-                    id: displayAfter
-                    checked: root.displayArtistPosition === 3
-                    exlusiveGroupe: displayArtistPositionGroup
-
-                    readonly property int type: 3
+                    CheckBox {
+                        id: displayArtist
+                    }
                 }
             }
         }
