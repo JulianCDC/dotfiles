@@ -77,6 +77,7 @@ mouseSensitivity=2
 screenTrackerInterval=2500
 showInfoWindow=true
 singleModeLayoutName=i3
+userConfiguredAutostart=true
 version=2
 
 [UniversalSettings][ScreenScales]
