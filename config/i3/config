@@ -8,6 +8,9 @@
 # autostart
 include autostart.conf
 
+# pull history
+bindsym $mod+Shift+comma exec --no-startup-id dunstctl history-pop
+
 # gaps
 gaps inner 8
 
