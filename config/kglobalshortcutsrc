@@ -39,11 +39,11 @@ mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Cou
 mute=Volume Mute,Volume Mute,Couper le son
 
 [ksmserver]
-Halt Without Confirmation=none,,Éteindre sans confirmation
+Halt Without Confirmation=none,none,Éteindre sans confirmation
 Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Verrouiller la session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Déconnexion
-Log Out Without Confirmation=none,,Déconnexion sans confirmation
-Reboot Without Confirmation=none,,Redémarrer sans confirmation
+Log Out Without Confirmation=none,none,Déconnexion sans confirmation
+Reboot Without Confirmation=none,none,Redémarrer sans confirmation
 _k_friendly_name=Gestion des sessions
 
 [kwin]
@@ -332,7 +332,7 @@ Turn Off Screen=none,none,Éteindre l'écran
 _k_friendly_name=Gestion de l'énergie
 
 [plasmashell]
-_k_friendly_name=Latte Dock
+_k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Activer l'entrée du gestionnaire de tâches 1
 activate task manager entry 10=Meta+0,Meta+0,Activer l'entrée du gestionnaire de tâches 10
 activate task manager entry 2=Meta+2,Meta+2,Activer l'entrée du gestionnaire de tâches 2
@@ -357,9 +357,9 @@ show dashboard=none,Ctrl+F12,Afficher le bureau
 show-barcode=none,none,Afficher le code barre...
 show-on-mouse-pos=none,Meta+V,Afficher Klipper à la position de la souris
 stop current activity=Meta+S,Meta+S,Arrêter l'activité actuelle
-switch to next activity=none,,Basculer vers l'activité suivante
-switch to previous activity=none,,Basculer vers l'activité précédente
-toggle do not disturb=none,,Basculer « Ne pas déranger »
+switch to next activity=none,none,Basculer vers l'activité suivante
+switch to previous activity=none,none,Basculer vers l'activité précédente
+toggle do not disturb=none,none,Basculer « Ne pas déranger »
 
 [systemsettings.desktop]
 _k_friendly_name=Configuration du système
