@@ -43,6 +43,9 @@
         path: config/*
         glob: true
         create: true
+    ~/.scripts:
+        path: scripts/
+        create: true
     # ~/.config/:
     #     path: config/*
     #     glob: true
