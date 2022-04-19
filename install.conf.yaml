@@ -21,16 +21,12 @@
         path: bin/
         create: true
     ~/.xinitrc:
-    ~/.gitkraken:
-        path: gitkraken/
-        create: true
     ~/.local/share/fonts:
         path: local/share/fonts/
         create: true
     ~/.local/share/kxmlgui5/dolphin:
         path: local/share/kxmlgui5/dolphin/
         create: true
-        if: '[ "$DESKTOP_SESSION" = plasma ]'
     ~/.local/share/kservices5:
         path: local/share/kservices5
         create: true
@@ -46,10 +42,5 @@
     ~/.scripts:
         path: scripts/
         create: true
-    # ~/.config/:
-    #     path: config/*
-    #     glob: true
-    #     create: true
-    #     exclude: config/plasma
 
 
