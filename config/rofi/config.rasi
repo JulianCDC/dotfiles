@@ -1,7 +1,6 @@
-configuration {
-    display-drun:                   "Apps";
-    display-window:                 "Window";
-    show-icons:true;
-}
+/** Basic config file **/
 
-@theme "slate"
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
