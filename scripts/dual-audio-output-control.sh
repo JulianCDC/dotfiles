@@ -6,6 +6,8 @@ if [ "$2" = "game" ]; then
   sink="game-sink"
 elif [ "$2" = "chat" ]; then
   sink="chat-sink"
+elif [ "$2" = "music" ]; then
+  sink="music-sink"
 fi
 
 if [ "$1" = "increase" ]; then
