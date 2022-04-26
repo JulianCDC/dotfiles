@@ -108,3 +108,6 @@ export BROWSER="/usr/bin/microsoft-edge-stable"
 
 # add rofi to path
 export PATH="$PATH:$HOME/.config/rofi/bin"
+
+# colors for polybar
+source $HOME/.config/polybar/env
