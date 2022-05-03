@@ -1,5 +1,7 @@
 #!/bin/sh
 
+~/.scripts/hibernate.sh start &
+
 BLANK='#00000000'
 CLEAR='#ffffff22'
 DEFAULT='#000000cc'
@@ -32,4 +34,4 @@ i3lock --nofork \
 --clock                      \
 --indicator                  \
 --time-str="%H:%M:%S"        \
---date-str="%A, %d/%m/%Y"
+--date-str="%A, %d/%m/%Y"; ~/.scripts/hibernate.sh stop

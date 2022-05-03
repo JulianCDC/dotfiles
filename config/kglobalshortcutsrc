@@ -25,9 +25,8 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Changer d'affichage
 
 [khotkeys]
-_k_friendly_name=Service personnalisé de raccourcis\s
+_k_friendly_name=konsole_globalaccel
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Rechercher
-{ec94d79f-d26d-486b-a6c0-fb7d29df6611}=Ctrl+Alt+T,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=Volume audio
@@ -251,11 +250,11 @@ activate entry 6=none,Meta+6,Activer l'entrée 6
 activate entry 7=none,Meta+7,Activer l'entrée 7
 activate entry 8=none,Meta+8,Activer l'entrée 8
 activate entry 9=none,Meta+9,Activer l'entrée 9
-clear-history=none,,Effacer l'historique du presse-papier
+clear-history=none,none,Effacer l'historique du presse-papier
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Activer les actions du presse-papier
-cycleNextAction=none,,Élément suivant de l'historique
-cyclePrevAction=none,,Élément précédent de l'historique
-edit_clipboard=none,,Modifier les contenus...
+cycleNextAction=none,none,Élément suivant de l'historique
+cyclePrevAction=none,none,Élément précédent de l'historique
+edit_clipboard=none,none,Modifier les contenus...
 new instance for entry 1=Meta+Ctrl+1,Meta+Ctrl+1,Nouvelle instance pour l'entrée 1
 new instance for entry 10=Meta+Ctrl+0,Meta+Ctrl+0,Nouvelle instance pour l'entrée 10
 new instance for entry 11=Meta+Ctrl+Z,Meta+Ctrl+Z,Nouvelle instance pour l'entrée 11
@@ -281,7 +280,7 @@ repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Démarrer manuellement une action concernant
 show latte global settings=Meta+W,Meta+W,Afficher la configuration globale de Latte
 show latte view=Meta+`,Meta+`,Afficher la barre de tâche / le panneau de Latte
 show view settings=none,Meta+A,Parcourez les fenêtres de configuration de la barre des tâches / du panneau
-show-barcode=none,,Afficher le code barre...
+show-barcode=none,none,Afficher le code barre...
 show-on-mouse-pos=none,Meta+V,Afficher Klipper à la position de la souris
 
 [mediacontrol]
@@ -298,6 +297,12 @@ stopmedia=Media Stop,Media Stop,Arrêter la lecture
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
 _launch=Meta+E,Meta+E,Dolphin
+
+[org.kde.konsole.desktop]
+NewTab=none,none,Ouvrir un nouvel onglet
+NewWindow=none,none,Ouvrir dans une nouvelle fenêtre
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,none,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Exécuter la commande en utilisant le contenu du presse-papier
