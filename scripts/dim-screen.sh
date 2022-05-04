@@ -1,7 +1,9 @@
+#!/bin/sh
+
 fade_brightness() {
     I=0
     while [ $I -lt 10 ]; do
-        brightnessctl -c backlight -q s 5%-
+        brightnessctl set 5%-
         sleep 0.05
         ((I = I + 1));
     done
