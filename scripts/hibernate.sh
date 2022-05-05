@@ -1,12 +1,7 @@
 #!/bin/sh
 
-if [ "$1" = "start" ]; then
-  touch /tmp/hibernate_timer
-  sleep 300
+echo $$
 
-  if [ -f /tmp/hibernate_timer ]; then
-      systemctl suspend
-  fi
-elif [ "$1" = "stop" ]; then
-  rm -f /tmp/hibernate_timer
-fi
+sleep 300
+
+systemctl suspend

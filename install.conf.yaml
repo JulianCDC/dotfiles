@@ -42,5 +42,9 @@
     ~/.scripts:
         path: scripts/
         create: true
-
-
+    ~/.settings:
+        path: settings/
+        create: true
+    ~/.anacron:
+        path: anacron/
+        create: true
