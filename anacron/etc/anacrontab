@@ -8,6 +8,7 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin
 RANDOM_DELAY=45
 # the jobs will be started during the following hours only
 START_HOURS_RANGE=0-23
+HOME=/home/julian
 
 #period in days   delay in minutes   job-identifier   command
 @daily 0 generate-wallpapers $HOME/.scripts/convert_wallpapers.sh

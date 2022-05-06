@@ -2,7 +2,8 @@
 
 # random_image_path=`find ~/.cache/lockscreen -type f | shuf -n 1`
 
-hibernate_pid=~/.scripts/hibernate.sh start &
+~/.scripts/hibernate.sh start &
+hibernate_pid=$!
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
@@ -40,6 +41,4 @@ i3lock --nofork \
 --blur 5                     \
 --clock                      \
 --time-str="%H:%M:%S"        \
---date-str="%A, %d/%m/%Y"; ~/.scripts/hibernate.sh stop
-
-trap "kill $hibernate_pid" SIGINT SIGTERM
+--date-str="%A, %d/%m/%Y"; kill $hibernate_pid
