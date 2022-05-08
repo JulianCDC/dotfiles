@@ -111,3 +111,4 @@ export PATH="$PATH:$HOME/.config/rofi/bin"
 
 # colors for polybar
 source $HOME/.config/polybar/env
+

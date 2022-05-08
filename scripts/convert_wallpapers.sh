@@ -1,6 +1,6 @@
 #!/bin/sh
 
-wallpapers_directory=`$HOME/.settings/getconfig.sh lockscreen_wallpaper`
+wallpapers_directory=`$HOME/.settings/getconfig.sh wallpapers.lockscreen`
 converted_directory="$HOME/.cache/lockscreen"
 
 # get file names without extensions in converted_directory

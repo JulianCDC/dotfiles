@@ -1,7 +1,7 @@
  #!/bin/bash
 
 # get wallpaper from config
-wallpaper=`~/.settings/getconfig.sh general_wallpaper`
+wallpaper=`~/.settings/getconfig.sh wallpapers.general`
 
 feh --bg-fill --randomize $wallpaper
 
