@@ -10,7 +10,8 @@ if [ "$1" = "toggle" ]; then
     dunstify "Screen saver" "Disabled"
   else
     echo "on" > ~/.scripts/screensaver/state
-    xset s 300 600 dpms 300 600 700
+    xset s 300 360
+    xset dpms 400 400 400
     dunstify "Screen saver" "Enabled"
 fi
 elif [ "$1" = "state" ]; then

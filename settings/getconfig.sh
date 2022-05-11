@@ -2,4 +2,7 @@
 
 value=`yq .$1 ~/.settings/config.yaml | envsubst`
 
-echo $value
+value2=${value#"\""}
+value2=${value2%"\""}
+
+echo $value2

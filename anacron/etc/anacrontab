@@ -12,3 +12,4 @@ HOME=/home/julian
 
 #period in days   delay in minutes   job-identifier   command
 @daily 0 generate-wallpapers $HOME/.scripts/convert_wallpapers.sh
+@daily 0 empty-trash $(which trash-empty) 30

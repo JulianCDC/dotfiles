@@ -2,6 +2,8 @@
 
 # random_image_path=`find ~/.cache/lockscreen -type f | shuf -n 1`
 
+lockscreen_folder=`$HOME/.settings/getconfig.sh wallpapers.lockscreen_converted`
+
 ~/.scripts/hibernate.sh start &
 hibernate_pid=$!
 
@@ -13,7 +15,7 @@ WRONG='#136ED7bb'
 VERIFYING='#FFFFFFbb'
 
 i3lock --nofork \
--i ~/.cache/lockscreen/ \
+-i $lockscreen_folder \
 --slideshow-interval=60 \
 --slideshow-random-selection \
 --fill \

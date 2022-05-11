@@ -2,4 +2,4 @@
 
 sleep 300
 
-systemctl suspend
+systemctl suspend-then-hibernate
