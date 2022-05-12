@@ -1,12 +1,12 @@
  #!/bin/bash
 
-# get wallpaper from config
-wallpaper=`~/.settings/getconfig.sh wallpapers.general`
+wallpaper=`getconfig wallpapers.general`
+slideshow_delay=`getconfig wallpapers.slideshow_delay`
 
 feh --bg-fill --randomize $wallpaper
 
 while true
 do
 	feh --bg-fill --randomize $wallpaper
-	sleep 600
+	sleep $slideshow_delay
 done

@@ -1,7 +1,7 @@
 #!/bin/sh
 
-wallpapers_directory=`$HOME/.settings/getconfig.sh wallpapers.lockscreen`
-converted_directory=`$HOME/.settings/getconfig.sh wallpapers.lockscreen_converted`
+wallpapers_directory=`getconfig wallpapers.lockscreen`
+converted_directory=`getconfig wallpapers.lockscreen_converted`
 
 # get file names without extensions in converted_directory
 old_files_names=`find $converted_directory -type f -name "*.png" | sed 's/.*\/\(.*\)\..*/\1/'`

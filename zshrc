@@ -93,6 +93,7 @@ alias gitu='git add . && git commit && git push'
 alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
+alias code='code-insiders'
 
 # android
 export ANDROID_SDK_ROOT="/mnt/data/VM/Android/sdk"
@@ -109,5 +110,6 @@ export BROWSER="/usr/bin/microsoft-edge-stable"
 # add rofi to path
 export PATH="$PATH:$HOME/.config/rofi/bin"
 
-# add config utilities to path
-export PATH="$PATH:$HOME/.settings"
+# custom bins
+export PATH="$PATH:$HOME/.local/bin"
+

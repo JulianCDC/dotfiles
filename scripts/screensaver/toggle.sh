@@ -1,6 +1,9 @@
 #!/bin/bash
 
 state=$(cat ~/.scripts/screensaver/state)
+dim_screen_delay=`getconfig system.dim_screen_delay`
+lock_session_delay=`getconfig system.lock_session_delay`
+dpms=$((lock_session_delay + 40))
 
 # check toggle option
 if [ "$1" = "toggle" ]; then
@@ -10,11 +13,10 @@ if [ "$1" = "toggle" ]; then
     dunstify "Screen saver" "Disabled"
   else
     echo "on" > ~/.scripts/screensaver/state
-    xset s 300 360
-    xset dpms 400 400 400
+    xset s $dim_screen_delay $lock_session_delay
+    xset dpms $dpms $dpms $dpms
     dunstify "Screen saver" "Enabled"
 fi
 elif [ "$1" = "state" ]; then
     echo $state
 fi
-

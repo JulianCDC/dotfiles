@@ -2,7 +2,8 @@
 
 # random_image_path=`find ~/.cache/lockscreen -type f | shuf -n 1`
 
-lockscreen_folder=`$HOME/.settings/getconfig.sh wallpapers.lockscreen_converted`
+lockscreen_folder=`getconfig wallpapers.lockscreen_converted`
+slideshow_interval=`getconfig wallpapers.lockscreen_slideshow_delay`
 
 ~/.scripts/hibernate.sh start &
 hibernate_pid=$!
@@ -16,7 +17,7 @@ VERIFYING='#FFFFFFbb'
 
 i3lock --nofork \
 -i $lockscreen_folder \
---slideshow-interval=60 \
+--slideshow-interval=$slideshow_interval \
 --slideshow-random-selection \
 --fill \
 --insidever-color=$CLEAR     \
