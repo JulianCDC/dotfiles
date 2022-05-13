@@ -9,8 +9,6 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-DEFAULT_SESSION=startkde
-
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -70,3 +68,4 @@ xset r rate 600 25
 export GTK_IM_MODULE DEFAULT=fcitx
 export QT_IM_MODULE  DEFAULT=fcitx
 export XMODIFIERS    DEFAULT=\@im=fcitx
+

@@ -2,8 +2,8 @@
 
 # random_image_path=`find ~/.cache/lockscreen -type f | shuf -n 1`
 
-lockscreen_folder=`getconfig wallpapers.lockscreen_converted`
-slideshow_interval=`getconfig wallpapers.lockscreen_slideshow_delay`
+lockscreen_folder=`~/.settings/getconfig.sh wallpapers.lockscreen_converted`
+slideshow_interval=`~/.settings/getconfig.sh wallpapers.lockscreen_slideshow_delay`
 
 ~/.scripts/hibernate.sh start &
 hibernate_pid=$!

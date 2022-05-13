@@ -1,8 +1,8 @@
 #!/bin/bash
 
 state=$(cat ~/.scripts/screensaver/state)
-dim_screen_delay=`getconfig system.dim_screen_delay`
-lock_session_delay=`getconfig system.lock_session_delay`
+dim_screen_delay=`~/.settings/getconfig.sh system.dim_screen_delay`
+lock_session_delay=`~/.settings/getconfig.sh system.lock_session_delay`
 dpms=$((lock_session_delay + 40))
 
 # check toggle option

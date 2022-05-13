@@ -110,6 +110,3 @@ export BROWSER="/usr/bin/microsoft-edge-stable"
 # add rofi to path
 export PATH="$PATH:$HOME/.config/rofi/bin"
 
-# custom bins
-export PATH="$PATH:$HOME/.local/bin"
-

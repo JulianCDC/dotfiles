@@ -1,7 +1,7 @@
  #!/bin/bash
 
-wallpaper=`getconfig wallpapers.general`
-slideshow_delay=`getconfig wallpapers.slideshow_delay`
+wallpaper=`~/.settings/getconfig.sh wallpapers.general`
+slideshow_delay=`~/.settings/getconfig.sh wallpapers.slideshow_delay`
 
 feh --bg-fill --randomize $wallpaper
 
