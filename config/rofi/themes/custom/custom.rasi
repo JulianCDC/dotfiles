@@ -1,0 +1,54 @@
+* {
+  bgcolor: #00000033;
+}
+#window {
+  background-color: @bgcolor;
+}
+#mainbox {
+  background-color: @bgcolor;
+}
+#message {
+  background-color: @bgcolor;
+}
+#textbox {
+}
+#listview {
+}
+#element {
+}
+#element.normal.normal {
+}
+#element.normal.urgent {
+}
+#element.normal.active {
+}
+#element.selected.normal {
+}
+#element.selected.urgent {
+}
+#element.selected.active {
+}
+#element.alternate.normal {
+}
+#element.alternate.urgent {
+}
+#element.alternate.active {
+}
+#mode-switcher {
+}
+#button {
+}
+#button.selected {
+}
+#inputbar {
+}
+#case-indicator {
+}
+#entry {
+}
+#prompt {
+}
+#inputbar {
+}
+#textbox-prompt-colon {
+}

@@ -1,22 +1,15 @@
 #!/bin/sh
 
-if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
-    updates_arch=0
-fi
+get_updates() {
+    updates=`cat ~/.scripts/updates-checker/updates.txt`
 
-if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
-# if ! updates_aur=$(paru -Qum 2> /dev/null | wc -l); then
-# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-# if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
-# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then
-# if ! updates_aur=$(rua upgrade --printonly 2> /dev/null | wc -l); then
-    updates_aur=0
-fi
+    if [ "$updates" -gt 0 ]; then
+        echo " $updates"
+    else
+        echo ""
+    fi
+}
 
-updates=$((updates_arch + updates_aur))
-
-if [ "$updates" -gt 0 ]; then
-    echo " $updates"
-else
-    echo ""
-fi
+inotifywait -m -q -e modify ~/.scripts/updates-checker/updates.txt | while read -r; do
+  get_updates
+done

@@ -13,3 +13,4 @@ HOME=/home/julian
 #period in days   delay in minutes   job-identifier   command
 @daily 0 generate-wallpapers source $HOME/.zshrc; $HOME/.scripts/convert_wallpapers.sh
 @daily 0 empty-trash source $HOME/.zshrc; trash-empty 30
+@hourly 0 check-updates source $HOME/.zshrc; $HOME/.scripts/updates-checker/check-updates.sh
