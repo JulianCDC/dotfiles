@@ -2,9 +2,6 @@
 
 - link:
     ~/.profile:
-    ~/.bash_profile:
-    ~/.bashrc:
-    ~/.bash_logout:
     ~/.gitconfig:
     ~/.ssh/config:
         path: ssh/config
@@ -47,4 +44,7 @@
         create: true
     ~/.anacron:
         path: anacron/
+        create: true
+    ~/.newsboat:
+        path: newsboat/
         create: true
