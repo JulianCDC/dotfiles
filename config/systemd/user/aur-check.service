@@ -1,0 +1,6 @@
+[Unit]
+Description=Updates package update count via yay
+
+[Service]
+Type=oneshot
+ExecStart=%h/.scripts/updates-checker/check-updates.sh

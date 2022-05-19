@@ -1,0 +1,6 @@
+[Unit]
+Description=Convert wallpapers for i3-lock
+
+[Service]
+Type=oneshot
+ExecStart=%h/.scripts/convert_wallpapers.sh
