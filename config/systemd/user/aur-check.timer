@@ -1,0 +1,9 @@
+[Unit]
+Description=Updates package update count periodically
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

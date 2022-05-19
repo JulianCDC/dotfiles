@@ -1,0 +1,6 @@
+[Unit]
+Description=Updates RSS count via newsboat
+
+[Service]
+Type=oneshot
+ExecStart=%h/.scripts/rss/check-updates.sh
