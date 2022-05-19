@@ -10,6 +10,8 @@ get_updates() {
     fi
 }
 
+get_updates
+
 inotifywait -m -q -e modify ~/.scripts/updates-checker/updates.txt | while read -r; do
   get_updates
 done
