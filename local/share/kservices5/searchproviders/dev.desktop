@@ -1,8 +1,0 @@
-[Desktop Entry]
-Charset=
-Hidden=false
-Keys=dev,dd
-Name=devdocs
-Query=https://devdocs.io/#q=\\{@}
-Type=Service
-X-KDE-ServiceTypes=SearchProvider

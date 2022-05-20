@@ -6,7 +6,7 @@ get_updates() {
     if [ "$unread" -gt 0 ]; then
         echo " $unread"
     else
-        echo ""
+        echo ""
     fi
 }
 
