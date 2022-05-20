@@ -3,9 +3,6 @@
 - link:
     ~/.profile:
     ~/.gitconfig:
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
     ~/.zprofile:
     ~/.zshrc:
     ~/.oh-my-zsh:
@@ -14,24 +11,10 @@
     ~/.oh-my-zsh/custom/plugins:
         path: ohmyzsh-plugins/*
         glob: true
-    ~/bin:
-        path: bin/
-        create: true
     ~/.xinitrc:
     ~/.local/share/fonts:
         path: local/share/fonts/
         create: true
-    ~/.local/share/kxmlgui5/dolphin:
-        path: local/share/kxmlgui5/dolphin/
-        create: true
-    ~/.local/share/kservices5:
-        path: local/share/kservices5
-        create: true
-        if: '[ "$DESKTOP_SESSION" = plasma ]'
-    ~/.local/share/plasma/plasmoids:
-        path: local/share/plasma/plasmoids
-        create: true
-        if: '[ "$DESKTOP_SESSION" = plasma ]'
     ~/.config:
         path: config/*
         glob: true
@@ -41,10 +24,4 @@
         create: true
     ~/.settings:
         path: settings/
-        create: true
-    ~/.anacron:
-        path: anacron/
-        create: true
-    ~/.newsboat:
-        path: newsboat/
         create: true

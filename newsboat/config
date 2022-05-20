@@ -5,3 +5,4 @@ refresh-on-startup yes
 keep-articles-days 30
 save-path "~/.newsboat/saved"
 bind-key ^O open-all-unread-in-browser-and-mark-read
+browser browser

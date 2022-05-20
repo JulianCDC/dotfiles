@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-export PATH="$PATH:$HOME/Path:$(go env GOPATH)/bin"
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -76,6 +73,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# PATH
+export PATH="$PATH:$HOME/Path:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/.config/rofi/bin"
+
 # java
 JAVA_11_HOME=/usr/lib/jvm/java-11-openjdk
 
@@ -95,18 +96,9 @@ alias df='df -h'
 alias free='free -m'
 alias code='code-insiders'
 
-# android
-export ANDROID_SDK_ROOT="/mnt/data/VM/Android/sdk"
-export ANDROID_HOME="/mnt/data/VM/Android/sdk"
-export PATH="$PATH:$ANDROID_SDK_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
-
 # set editor
 export EDITOR="/usr/bin/code-insiders --reuse-window --wait"
 export VISUAL="/usr/bin/code-insiders --reuse-window --wait"
 
-# set browser
-export BROWSER="/usr/bin/microsoft-edge-stable"
-
-# add rofi to path
-export PATH="$PATH:$HOME/.config/rofi/bin"
-
+# set browser (symlink browser to /usr/bin/browser beforehand)
+export BROWSER="/usr/bin/browser"
