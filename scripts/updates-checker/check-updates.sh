@@ -10,7 +10,7 @@ fi
 
 update_number=$((updates_arch + updates_aur))
 
-old_updates=`cat ~/.scripts/updates-checker`
+old_updates=`cat ~/.scripts/updates-checker/updates.txt`
 new_updates=$((update_number - old_updates))
 
 if [ "$new_updates" -gt 0 ]; then

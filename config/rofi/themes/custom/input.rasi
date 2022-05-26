@@ -1,0 +1,51 @@
+configuration {
+  sidebar-mode: false;
+}
+
+@theme "/dev/null"
+
+* {
+  focus: #00000033;
+
+  background-color: #00000077;
+  text-color: #ffffff;
+}
+
+window {
+  transparency: "real";
+  width: 40%;
+  y-offset: 10px;
+  padding: 0;
+  location: center;
+  children: [ mainbox ];
+}
+
+prompt {
+  enabled: true;
+  text-color: @text-color;
+  background-color: transparent;
+  padding: 5px 0 5px 0;
+}
+
+entry {
+  placeholder: "Type here...";
+  expand: true;
+  padding: 5px 5px 5px 1%;
+  background-color: transparent;
+  placeholder-color: @text-color;
+}
+
+inputbar {
+  children: [ prompt, entry ];
+  background-color: transparent;
+  text-color: @text-color;
+  expand: false;
+  padding: 0;
+}
+
+mainbox {
+  children: [ inputbar ];
+  spacing: 2%;
+  padding: 1% 0.5% 1% 0.5%;
+  background-color: transparent;
+}
