@@ -1,0 +1,1 @@
+-o "%(title)s [%(extractor)s - %(id)s].%(ext)s"

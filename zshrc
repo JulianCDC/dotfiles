@@ -88,13 +88,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # aliases
-alias search="find . -name"
 alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias gitu='git add . && git commit && git push'
 alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
 alias code='code-insiders'
+alias rofi-input='rofi -dmenu -theme ~/.config/rofi/themes/custom/input.rasi'
 
 # set editor
 export EDITOR="/usr/bin/code-insiders --reuse-window --wait"
