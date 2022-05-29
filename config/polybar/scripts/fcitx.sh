@@ -7,5 +7,5 @@ if [[ "$INPUT" == "keyboard-fr" ]]; then
 elif [[ "$INPUT" == "mozc" ]]; then
     echo "日本語"
 elif [[ "$INPUT" == "" ]]; then
-    echo "NONE"
+    echo ""
 fi
