@@ -2,6 +2,7 @@
 
 wallpapers_directory=`~/.settings/getconfig.sh wallpapers.lockscreen`
 converted_directory=`~/.settings/getconfig.sh wallpapers.lockscreen_converted`
+screen_size=`xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+) pixels.*$/\1/'`
 
 echo "Found wallpapers in $wallpapers_directory"
 echo "Converted wallpapers will be saved in $converted_directory"
@@ -33,7 +34,7 @@ for new_file_path in $new_files_paths; do
     if ! echo $old_files_names | grep -q $new_file_name; then
         echo "Converting $new_file_path"
 
-        convert -scale 1920x1080 $wallpapers_directory/$new_file_path -quality 100 $converted_directory/$new_file_name.png
+        convert -scale $screen_size $wallpapers_directory/$new_file_path -quality 100 $converted_directory/$new_file_name.png
     fi
 done
 

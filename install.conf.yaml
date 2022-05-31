@@ -25,3 +25,6 @@
     ~/.settings:
         path: settings/
         create: true
+    ~/.newsboat:
+        path: newsboat/
+        create: true
