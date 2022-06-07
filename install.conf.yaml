@@ -2,7 +2,6 @@
 
 - link:
     ~/.profile:
-    ~/.gitconfig:
     ~/.zprofile:
     ~/.zshrc:
     ~/.oh-my-zsh:
