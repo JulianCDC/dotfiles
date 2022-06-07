@@ -1,0 +1,26 @@
+wallpapers:
+  general:
+    label: Desktop wallpapers path
+    default:
+  slideshow_delay:
+    label: Delay before next wallpaper (in seconds)
+    default: 600
+  lockscreen:
+    label: Lockscreen wallpapers path
+    default:
+  lockscreen_slideshow_delay:
+    label: Delay before next wallpaper (in seconds) on lockscreen
+    default: 60
+  lockscreen_converted:
+    label: Folder where lockscreen wallpapers are stored
+    default: $HOME/.lockscreen
+system:
+  dim_screen_delay:
+    label: Delay before dimming screen (in seconds)
+    default: 300
+  lock_session_delay:
+    label: Delay before locking session (in seconds)
+    default: 360
+  sleep_delay:
+    label: Delay before going to sleep after session being locked (in seconds)
+    default: 300
