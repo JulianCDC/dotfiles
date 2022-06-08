@@ -28,7 +28,7 @@ pacman_install() {
 }
 
 yay_install() {
-    yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake --mflags "--noconfirm" $1
+    yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake $1
 }
 
 trap cleanup EXIT
@@ -126,7 +126,8 @@ sudo sed -i 's/^webkit_theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.con
 sudo systemctl enable lightdm.service
 
 format_line "Installing desktop environment"
-pacman_install picom polybar feh i3lock-color
+pacman_install picom polybar feh
+yay_install i3lock-color
 
 format_line "Installing fonts"
 yay_install otf-material-icons-git ttf-kokuri ttf-symbola noto-fonts noto-fonts-emoji
