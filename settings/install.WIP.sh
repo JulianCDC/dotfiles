@@ -23,6 +23,14 @@ cleanup() {
     cd $exec_directory
 }
 
+pacman_install() {
+    sudo pacman -S --noconfirm --needed $1
+}
+
+yay_install() {
+    yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake --mflags "--noconfirm" $1
+}
+
 trap cleanup EXIT
 
 format_line() {
@@ -37,7 +45,7 @@ format_line "Performing full system update before installation"
 sudo pacman --noconfirm -Syu
 
 format_line "Installing dependencies for yay"
-sudo pacman --noconfirm --needed -S git base-devel go
+pacman_install git base-devel go
 
 format_line "Installing yay"
 cd $tmp_directory
@@ -46,39 +54,39 @@ cd yay
 makepkg -si --noconfirm
 
 format_line "Creating common directories in user's home directory"
-sudo pacman --noconfirm --needed -S xdg-user-dirs
+pacman_install xdg-user-dirs
 xdg-user-dirs-update
 
 format_line "Cloning dotfiles in user's home directory"
 git clone --recurse-submodules -j8 https://github.com/JulianCDC/dotfiles ~/.dotfiles
 
 format_line "Installing dependencies for dotfiles"
-sudo pacman --noconfirm --needed -S python
+pacman_install python
 
 format_line "Installing dotfiles"
 cd ~/.dotfiles
 ./install
 
 format_line "Installing Xorg"
-sudo pacman --noconfirm --needed -S xorg-server xorg-apps
+pacman_install xorg-server xorg-apps
 
 amd() {
     format_line "Installing AMD drivers"
-    sudo pacman --noconfirm --needed -S xf86-video-amdgpu
+    pacman_install xf86-video-amdgpu
 
     sudo cp $files_directory/xorg/20-amdgpu.conf /etc/X11/xorg.conf.d
 }
 
 nvidia() {
     format_line "Installing Nvidia drivers"
-    sudo pacman --noconfirm --needed -S nvidia
+    pacman_install nvidia
 
     sudo cp $files_directory/xorg/20-nvidia.conf /etc/X11/xorg.conf.d
 }
 
 radeon() {
     format_line "Installing Radeon drivers"
-    sudo pacman --noconfirm --needed -S xf86-video-ati
+    pacman_install xf86-video-ati
 
     sudo cp $files_directory/xorg/20-radeon.conf /etc/X11/xorg.conf.d
 }
@@ -109,16 +117,16 @@ do
 done
 
 format_line "Installing i3"
-sudo pacman --noconfirm --needed -S i3-gaps
+pacman_install i3-gaps
 
 format_line "Installing display manager"
-sudo pacman --noconfirm --needed -S lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+pacman_install lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
 sudo sed -i 's/^# greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
 sudo sed -i 's/^webkit_theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.conf
 sudo systemctl enable lightdm.service
 
 format_line "Installing desktop environment"
-sudo pacman --noconfirm --needed -S picom polybar feh i3lock-color
+pacman_install picom polybar feh i3lock-color
 
 format_line "Installing fonts"
-yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake otf-material-icons-git ttf-kokuri ttf-symbola noto-fonts noto-fonts-emoji
+yay_install otf-material-icons-git ttf-kokuri ttf-symbola noto-fonts noto-fonts-emoji
