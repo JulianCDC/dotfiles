@@ -34,7 +34,7 @@ format_line() {
 }
 
 format_line "Performing full system update before installation"
-sudo pacman -Syu
+sudo pacman --noconfirm -Syu
 
 format_line "Installing dependencies for yay"
 sudo pacman --noconfirm --needed -S git base-devel go
@@ -113,6 +113,12 @@ sudo pacman --noconfirm --needed -S i3-gaps
 
 format_line "Installing display manager"
 sudo pacman --noconfirm --needed -S lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
-sudo sed -i 's/^#greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
-sudo sed -i 's/^webkit-theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^# greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^webkit_theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.conf
 sudo systemctl enable lightdm.service
+
+format_line "Installing desktop environment"
+sudo pacman --noconfirm --needed -S picom polybar feh i3lock-color
+
+format_line "Installing fonts"
+yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake otf-material-icons-git ttf-kokuri ttf-symbola noto-fonts noto-fonts-emoji
