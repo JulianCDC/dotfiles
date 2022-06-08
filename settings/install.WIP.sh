@@ -33,6 +33,9 @@ format_line() {
     echo ""
 }
 
+format_line "Performing full system update before installation"
+sudo pacman -Syu
+
 format_line "Installing dependencies for yay"
 sudo pacman --noconfirm --needed -S git base-devel go
 
