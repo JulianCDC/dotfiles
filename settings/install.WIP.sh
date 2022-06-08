@@ -24,11 +24,11 @@ cleanup() {
 }
 
 pacman_install() {
-    sudo pacman -S --noconfirm --needed $1
+    sudo pacman -S --noconfirm --needed $@
 }
 
 yay_install() {
-    yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake $1
+    yay -S --answerclean All --answerdiff None --answeredit None --answerupgrade All --removemake $@
 }
 
 trap cleanup EXIT
