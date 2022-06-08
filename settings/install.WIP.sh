@@ -82,7 +82,7 @@ radeon() {
 
 format_line "Installing graphic drivers"
 PS3='What graphic drivers should be installed: '
-options=("AMD" "Nvidia" "Radeon" "None" "Quit")
+options=("AMD" "Nvidia" "Radeon" "None")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -101,9 +101,15 @@ do
         "None")
             break
             ;;
-        "Quit")
-            exit
-            ;;
         *) echo "invalid option $REPLY";;
     esac
 done
+
+format_line "Installing i3"
+sudo pacman --noconfirm --needed -S i3-gaps
+
+format_line "Installing display manager"
+sudo pacman --noconfirm --needed -S lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+sudo sed -i 's/^#greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^webkit-theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.conf
+sudo systemctl enable lightdm.service
