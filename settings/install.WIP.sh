@@ -82,7 +82,7 @@ radeon() {
 
 format_line "Installing graphic drivers"
 PS3='What graphic drivers should be installed: '
-options=("AMD" "Nvidia" "Radeon" "Quit")
+options=("AMD" "Nvidia" "Radeon" "None" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -98,10 +98,12 @@ do
             radeon
             break
             ;;
+        "None")
+            break
+            ;;
         "Quit")
             exit
             ;;
         *) echo "invalid option $REPLY";;
-    esac
     esac
 done
