@@ -28,7 +28,7 @@ pacman_install() {
 }
 
 yay_install() {
-    yay -S --answerclean All --answerdiff None --answeredit None --noupgrademenu --removemake --noprovides $@
+    yay -S --answerclean All --answerdiff None --answeredit None --noupgrademenu --removemake --noprovides --noconfirm --needed $@
 }
 
 trap cleanup EXIT
