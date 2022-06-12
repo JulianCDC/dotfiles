@@ -27,6 +27,10 @@ pacman_install() {
     sudo pacman -S --noconfirm --needed $@
 }
 
+pacman_remove() {
+    sudo pacman -R --noconfirm $@
+}
+
 yay_install() {
     yay -S --answerclean All --answerdiff None --answeredit None --noupgrademenu --removemake --noprovides --noconfirm --needed $@
 }
@@ -129,6 +133,12 @@ format_line "Installing desktop environment"
 pacman_install picom polybar feh
 yay_install i3lock-color
 
-format_line "Installing fonts"
-pacman_install noto-fonts noto-fonts-emoji
-yay_install otf-material-icons-git ttf-koruri ttf-symbola
+# format_line "Installing fonts"
+# pacman_install noto-fonts noto-fonts-emoji
+# yay_install otf-material-icons-git ttf-koruri ttf-symbola
+
+format_line "Replacing sudo with doas"
+pacman_install doas
+sudo echo "permit :wheel" >> /etc/doas.conf
+pacman_remove sudo
+doas ln -s /usr/bin/doas /usr/bin/sudo
