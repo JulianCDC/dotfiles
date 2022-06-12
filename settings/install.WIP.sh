@@ -130,4 +130,5 @@ pacman_install picom polybar feh
 yay_install i3lock-color
 
 format_line "Installing fonts"
-yay_install otf-material-icons-git ttf-kokuri ttf-symbola noto-fonts noto-fonts-emoji
+pacman_install noto-fonts noto-fonts-emoji
+yay_install otf-material-icons-git ttf-koruri ttf-symbola
