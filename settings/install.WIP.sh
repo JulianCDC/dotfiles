@@ -167,6 +167,10 @@ format_line "Starting user services"
 systemctl --user enable aur-check.timer rss-check.timer
 # TODO: Trash and wallpapers
 
+format_line "Creating user config"
+cd ~/.settings
+./genconfig.sh
+
 format_line "Replacing sudo with doas"
 pacman_install doas
 sudo touch /etc/doas.conf

@@ -1,13 +1,13 @@
 wallpapers:
   general:
     label: Desktop wallpapers path
-    default:
+    default: $HOME/.wallpapers
   slideshow_delay:
     label: Delay before next wallpaper (in seconds)
     default: 600
   lockscreen:
     label: Lockscreen wallpapers path
-    default:
+    default: $HOME/.wallpapers
   lockscreen_slideshow_delay:
     label: Delay before next wallpaper (in seconds) on lockscreen
     default: 60
