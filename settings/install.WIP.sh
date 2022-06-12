@@ -137,13 +137,6 @@ yay_install i3lock-color i3-layouts
 # pacman_install noto-fonts noto-fonts-emoji
 # yay_install otf-material-icons-git ttf-koruri ttf-symbola
 
-format_line "Replacing sudo with doas"
-pacman_install doas
-sudo touch /etc/doas.conf
-sudo sh -c "echo "permit :wheel" >> /etc/doas.conf"
-pacman_remove sudo
-doas ln -s /usr/bin/doas /usr/bin/sudo
-
 format_line "Installing bluetooth utilities"
 pacman_install bluez bluez-utils blueman
 
@@ -173,3 +166,10 @@ autorandr --dry-run common >> ~/.scripts/xrandr.sh
 format_line "Starting user services"
 systemctl --user enable aur-check.timer rss-check.timer
 # TODO: Trash and wallpapers
+
+format_line "Replacing sudo with doas"
+pacman_install doas
+sudo touch /etc/doas.conf
+sudo sh -c "echo 'permit :wheel' >> /etc/doas.conf"
+pacman_remove sudo
+doas ln -s /usr/bin/doas /usr/bin/sudo
