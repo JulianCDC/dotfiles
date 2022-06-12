@@ -164,6 +164,12 @@ format_line "Installing network utilities"
 pacman_install networkmanager nm-connection-editor
 yay_install networkmanager-dmenu-git
 
+format_line "Generate xrandr config"
+pacman_install autorandr
+touch ~/.scripts/xrandr.sh
+echo "#!/bin/sh" >> ~/.scripts/xrandr.sh
+autorandr --dry-run common >> ~/.scripts/xrandr.sh
+
 format_line "Starting user services"
 systemctl --user enable aur-check.timer rss-check.timer
 # TODO: Trash and wallpapers
