@@ -96,7 +96,7 @@ radeon() {
 }
 
 format_line "Installing graphic drivers"
-PS3='What graphic drivers should be installed: '
+echo 'What graphic drivers should be installed: '
 options=("AMD" "Nvidia" "Radeon" "None")
 select opt in "${options[@]}"
 do
@@ -131,7 +131,7 @@ sudo systemctl enable lightdm.service
 
 format_line "Installing desktop environment"
 pacman_install picom polybar feh
-yay_install i3lock-color
+yay_install i3lock-color i3-layouts
 
 # format_line "Installing fonts"
 # pacman_install noto-fonts noto-fonts-emoji
@@ -139,6 +139,31 @@ yay_install i3lock-color
 
 format_line "Replacing sudo with doas"
 pacman_install doas
+sudo touch /etc/doas.conf
 sudo sh -c "echo "permit :wheel" >> /etc/doas.conf"
 pacman_remove sudo
 doas ln -s /usr/bin/doas /usr/bin/sudo
+
+format_line "Installing bluetooth utilities"
+pacman_install bluez bluez-utils blueman
+
+format_line "Installing packages required for scripts"
+pacman_install inotify-tools checkupdates playerctl brightnessctl
+
+format_line "Installing user utilities"
+pacman_install dunst newsboat rofi
+yay_install rofi-greenclip konsole pavucontrol dolphin flameshot
+
+format_line "Installing system utilities"
+pacman_install htop polkit-gnome dex xss-lock
+
+format_line "Installing fcitx"
+pacman_install fcitx5-im fcitx5-mozc
+
+format_line "Installing network utilities"
+pacman_install networkmanager nm-connection-editor
+yay_install networkmanager-dmenu-git
+
+format_line "Starting user services"
+systemctl --user enable aur-check.timer rss-check.timer
+# TODO: Trash and wallpapers
