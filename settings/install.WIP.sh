@@ -121,8 +121,8 @@ pacman_install i3-gaps
 
 format_line "Installing display manager"
 pacman_install lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
-sudo sed -i 's/^# greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
-sudo sed -i 's/^webkit_theme.*/webkit-theme=litarvan/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^# greeter-session.*/greeter-session = lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^webkit_theme.*/webkit_theme = litarvan/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 sudo systemctl enable lightdm.service
 
 format_line "Installing desktop environment"
