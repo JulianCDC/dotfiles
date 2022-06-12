@@ -141,7 +141,7 @@ format_line "Installing bluetooth utilities"
 pacman_install bluez bluez-utils blueman
 
 format_line "Installing packages required for scripts"
-pacman_install inotify-tools checkupdates playerctl brightnessctl
+pacman_install inotify-tools pacman-contrib playerctl brightnessctl
 
 format_line "Installing user utilities"
 pacman_install dunst newsboat rofi
