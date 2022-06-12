@@ -96,7 +96,7 @@ radeon() {
 }
 
 format_line "Installing graphic drivers"
-echo 'What graphic drivers should be installed: '
+PS3='What graphic drivers should be installed: '
 options=("AMD" "Nvidia" "Radeon" "None")
 select opt in "${options[@]}"
 do
@@ -130,7 +130,7 @@ sudo sed -i 's/^webkit_theme.*/webkit_theme = litarvan/g' /etc/lightdm/lightdm-w
 sudo systemctl enable lightdm.service
 
 format_line "Installing desktop environment"
-pacman_install picom polybar feh
+pacman_install picom polybar feh python-setuptools
 yay_install i3lock-color i3-layouts
 
 # format_line "Installing fonts"
