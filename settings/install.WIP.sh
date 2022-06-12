@@ -125,7 +125,7 @@ pacman_install i3-gaps
 
 format_line "Installing display manager"
 pacman_install lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
-sudo sed -i 's/^# greeter-session.*/greeter-session = lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^#greeter-session.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
 sudo sed -i 's/^webkit_theme.*/webkit_theme = litarvan/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 sudo systemctl enable lightdm.service
 
@@ -139,6 +139,6 @@ yay_install i3lock-color
 
 format_line "Replacing sudo with doas"
 pacman_install doas
-sudo echo "permit :wheel" >> /etc/doas.conf
+sudo sh -c "echo "permit :wheel" >> /etc/doas.conf"
 pacman_remove sudo
 doas ln -s /usr/bin/doas /usr/bin/sudo
