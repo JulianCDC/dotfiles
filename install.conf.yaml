@@ -3,7 +3,6 @@
 - link:
     ~/.profile:
     ~/.zprofile:
-    ~/.xprofile:
     ~/.zshrc:
     ~/.oh-my-zsh:
         path: ohmyzsh/

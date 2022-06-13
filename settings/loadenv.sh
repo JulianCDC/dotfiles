@@ -13,7 +13,7 @@ for key in $env_keys; do
     formated_variable_name=${variable_name#"\""}
     formated_variable_name=${formated_variable_name%"\""}
 
-    declare $formated_variable_name="$formated_value"
+    export $formated_variable_name="$formated_value"
 
     unset key
     unset value

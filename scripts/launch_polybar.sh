@@ -5,8 +5,8 @@ polybar-msg cmd quit
 # launch polybar on all monitors
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload example &
+    MONITOR=$m polybar --reload main &
   done
 else
-  polybar --reload example &
+  polybar --reload main &
 fi
