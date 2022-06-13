@@ -28,3 +28,9 @@ env:
   polybar_background_color:
     label: Polybar background color
     default: '#9611161C'
+  polybar_background_alt_color:
+    label: Polybar background alternate color
+    default: '#373B41'
+  polybar_foreground_color:
+    label: Polybar text color
+    default: '#C5C8C6'
