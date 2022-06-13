@@ -24,3 +24,7 @@ system:
   sleep_delay:
     label: Delay before going to sleep after session being locked (in seconds)
     default: 300
+env:
+  polybar_background_color:
+    label: Polybar background color
+    default: '#9611161C'
