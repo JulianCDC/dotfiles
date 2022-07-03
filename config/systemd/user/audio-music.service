@@ -1,0 +1,10 @@
+[Unit]
+Description=Start audio loopback for music
+Requires=pipewire.service pipewire-pulse.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pw-loopback -m '[ FL FR ]' --capture-props='media.class=Audio/Sink node.name=music-sink node.description=Music'
+
+[Install]
+WantedBy=default.target

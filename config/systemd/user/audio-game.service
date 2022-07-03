@@ -1,0 +1,10 @@
+[Unit]
+Description=Start audio loopback for game
+Requires=pipewire.service pipewire-pulse.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pw-loopback -m '[ FL FR ]' --capture-props='media.class=Audio/Sink node.name=game-sink node.description=Game'
+
+[Install]
+WantedBy=default.target
