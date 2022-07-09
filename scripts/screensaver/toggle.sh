@@ -1,8 +1,8 @@
 #!/bin/bash
 
 state=$(cat ~/.scripts/screensaver/state)
-dim_screen_delay=`~/.settings/getconfig.sh system.dim_screen_delay`
-lock_session_delay=`~/.settings/getconfig.sh system.lock_session_delay`
+dim_screen_delay=`config_manager --cli get energy dimscreendelay`
+lock_session_delay=`config_manager --cli get energy locksessiondelay`
 dpms=$((lock_session_delay + 40))
 lock_session_wait=$((lock_session_delay - dim_screen_delay))
 
