@@ -1,0 +1,12 @@
+{
+    "54448218-69d6-44cc-abfd-7aaef9e6736f": {
+        "id": "54448218-69d6-44cc-abfd-7aaef9e6736f",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1657652905.0353036
+    }
+}

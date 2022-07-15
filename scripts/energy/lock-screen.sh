@@ -5,8 +5,7 @@
 lockscreen_folder=`~/.settings/getconfig.sh wallpapers.lockscreen_converted`
 slideshow_interval=`~/.settings/getconfig.sh wallpapers.lockscreen_slideshow_delay`
 
-~/.scripts/hibernate.sh start &
-hibernate_pid=$!
+echo "locked" > ~/.scripts/energy/status.txt
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
@@ -44,4 +43,4 @@ i3lock --nofork \
 --blur 5                     \
 --clock                      \
 --time-str="%H:%M:%S"        \
---date-str="%A, %d/%m/%Y"; kill $hibernate_pid
+--date-str="%A, %d/%m/%Y"; echo "unlocked" > ~/.scripts/energy/status.txt
