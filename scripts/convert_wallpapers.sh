@@ -1,7 +1,7 @@
 #!/bin/sh
 
-wallpapers_directory=`~/.settings/getconfig.sh wallpapers.lockscreen`
-converted_directory=`~/.settings/getconfig.sh wallpapers.lockscreen_converted`
+wallpapers_directory=`config_manager --cli get appearance lockscreenwallpapers`
+converted_directory=`config_manager --cli get appearance lockscreenconversionfolder`
 screen_size=`xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+) pixels.*$/\1/'`
 
 echo "Found wallpapers in $wallpapers_directory"

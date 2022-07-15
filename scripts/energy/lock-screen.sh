@@ -2,8 +2,8 @@
 
 # random_image_path=`find ~/.cache/lockscreen -type f | shuf -n 1`
 
-lockscreen_folder=`~/.settings/getconfig.sh wallpapers.lockscreen_converted`
-slideshow_interval=`~/.settings/getconfig.sh wallpapers.lockscreen_slideshow_delay`
+lockscreen_folder=`config_manager --cli get appearance lockscreenconversionfolder`
+slideshow_interval=`config_manager --cli get appearance lockscreenslideshowinterval`
 
 pre_lock() {
   echo "locked" > ~/.scripts/energy/status.txt

@@ -1,0 +1,9 @@
+[Unit]
+Description=Start feh to display images in the background
+
+[Service]
+Type=simple
+ExecStart=/bin/bash %h/.scripts/feh-wallpaper.sh
+
+[Install]
+WantedBy=default.target
